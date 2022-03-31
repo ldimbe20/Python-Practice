@@ -36,7 +36,92 @@
     
 # print(division_integer(10, 2))
 
-def newCode(a,b):
-        return a+b, a-b, a*b
+# def newCode(a,b):
+#         return a+b, a-b, a*b
 
-print(newCode(3,5))
+# print(newCode(3,5))
+
+#lists can store different data types arrays [] can only store one data type
+
+#Creating a for in loop with using range
+
+# def square_number(n):
+#     squares = []
+#     for i in range(n +1):
+#         squares.append(i * i)
+#     return squares
+        
+        
+# print(square_number(10))
+
+# def range_number(n,b):
+#     squares = []
+#     for i in range(n, b+1):
+#         squares.append(i * i)
+#     return squares
+
+# print(range_number(10,12))
+
+
+
+
+# new_list=[ x for x in range(10)]
+
+# print(new_list)
+
+# #filtered_list = [ x for x in range(50) if x % 2 == 0 if x % 5 == 0]
+# #print(filtered_list)
+
+#!Using List comprehensions
+
+from asyncore import loop
+
+
+names=["lauren", "Ally", "Kirstin", "Tina"]
+
+# # l_names= [name for name in names if name.startswith("l")] 
+
+# print(l_names)
+
+def L_names(name):
+    lnames = []
+    for i in name:
+        if i.startswith("l"):
+                lnames.append(i)
+        return lnames
+    
+    
+
+print(L_names(names))
+
+# def new_number(b):
+#         numbers_10 = [x for x in range(b) if x > 3]
+#         return (numbers_10)
+               
+# print (new_number(7))
+
+# #Turn below into list comprehension
+# j=[0,1,2,3,4,5]
+# # 
+
+# def loopFunction(list):
+#     plus_six=[]
+#     # iterates through the list, the range is set to the length of the list
+#     for x in range(len(list)):
+#         if x < 3:
+#             x += 6 
+#             plus_six.append(x)
+#     return plus_six  
+# print(loopFunction(j))
+
+
+j=[0,1,2,3,4,5]
+
+
+
+# # 
+def loopFunction(list):
+        plus_six = [number for number in list if number < 3 ]
+        return plus_six
+
+print(loopFunction(j))
